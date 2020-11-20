@@ -130,7 +130,7 @@ for tik in lst:
                 mini_df['УИК №'] = [uik_name.split('№')[1] for i in range(len(mini_df))]
             else:
                 mini_df['УИК №'] = None
-            mini_df['ФИО'] = mini_df['rows'].apply(lambda x: ' '.join(x.split(' ')[1:3])).astype(str)
+            mini_df['ФИО'] = mini_df['rows'].apply(lambda x: ' '.join(x.split(' ')[1:4])).astype(str)
             mini_df['Статус'] = mini_df['rows'].apply(lambda x: x.split(' ')[4]).astype(str)
             mini_df['Кем предложен в состав комиссии'] = mini_df['rows'].apply(lambda x: ' '.join(x.split(' ')[5:])).astype(str)
             mini_df = mini_df.drop(columns=['rows'])
