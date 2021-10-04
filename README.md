@@ -1,2 +1,2 @@
-## Тестовое задание компании Utair
-Описание задачи и их решение можно найти в файле **\>> Zabavin_Utair.ipynb <<**
+## Test task Utair
+-Task description located here **\>> Zabavin_Utair.ipynb <<**
